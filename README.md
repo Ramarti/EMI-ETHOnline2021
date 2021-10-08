@@ -1,4 +1,8 @@
 # Ethereum Market index
+0. Install dependencies
+```shell
+npm install
+```
 1. Put your values in .env, following .env.example
 
 2. Launch mainnet fork node in a terminal (will open node RPC at `http://127.0.0.1:8545/`)
