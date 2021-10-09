@@ -47,7 +47,6 @@ async function main() {
   const policyManagerConfig = createPoliciesConfig()
 
   console.log('Creating fund...')
-
   const tx = await fundDeployer.createNewFund(
     ownerSigner.address,
     'EMI',
@@ -56,9 +55,10 @@ async function main() {
     feeManagerConfig,
     policyManagerConfig
   )
+
   const receipt = await tx.wait()
-  const { comptrollerProxy, vaultProxy } = parseEvents(receipt)
-  
+  const { comptrollerProxy, vaultProxy } = receipt.events.filter((event) => event.event === 'NewFundCreated')[0].args
+
   console.log('Fund created!')
 
   const toSave = { comptrollerProxy, vaultProxy }
@@ -84,14 +84,6 @@ main().catch((error) => {
   process.exitCode = 1
 })
 
-function parseEvents(receipt) {
-  const [newFundCreatedEvent] = receipt.events.filter(x => x.event === 'NewFundCreated')
-
-  return {
-    comptrollerProxy: newFundCreatedEvent.args.comptrollerProxy,
-    vaultProxy: newFundCreatedEvent.args.vaultProxy,
-  }
-}
 
 function saveDeployment(results) {
   const saveJson = JSON.stringify(results, null, 4)
