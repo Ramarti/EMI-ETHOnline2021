@@ -14,6 +14,8 @@ npx hardhat node
 ```shell
 npx hardhat run scripts/create-fund.js
 ```
+This will create a fund with the defined fees and token blacklist, and will save the deployed contract's addresses in  `/deployment/fund.json` for use in the other scripts
+
 
 4. Launch python bot in ...
 
