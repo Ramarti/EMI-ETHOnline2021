@@ -23,6 +23,7 @@
     "solidity-coverage": "^0.7.17"
   },
   "dependencies": {
-    "@enzymefinance/protocol": "^3.0.1"
+    "@enzymefinance/protocol": "^3.0.1",
+    "axios": "^0.22.0"
   }
 }

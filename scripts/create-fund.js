@@ -11,6 +11,7 @@ const { BigNumber } = ethers
 
 const ABIs = {
   FUND_DEPLOYER: require('../external_abi/enzyme/FundDeployer.json'),
+  VAULT: require('../external_abi/enzyme/VaultLib.json'),
   WETH: require('../external_abi/wrappedETH.json'),
 }
 const addresses = {
@@ -72,6 +73,12 @@ async function main() {
 
   console.log('Seeding fund...')
   await sendInitialDepositToFund(ownerSigner, '100', comptrollerProxy)
+  const vault = new ethers.Contract(vaultProxy, ABIs.VAULT, ownerSigner)
+  console.log('owner', ownerSigner.address)
+  
+  console.log('accessor', await vault.getAccessor())
+  console.log('trackedAssets', await vault.getTrackedAssets())
+
   console.log('Finished!')
 }
 
