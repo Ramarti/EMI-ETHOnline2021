@@ -44,14 +44,16 @@ main().catch((error) => {
 })
 
 async function getGav(signer, comptrollerProxyAddress) {
-  return 100
-  console.log('owner', signer.address)
-  console.log('comptrollerProxy', comptrollerProxyAddress)
   const comptrollerContract = new enzyme.ComptrollerLib(comptrollerProxyAddress, signer)
-  const [gav] = await comptrollerContract.calcGav.args(true).call()
-  console.log('gav', gav)
-  return gav
+  const tx = await comptrollerContract.calcGav.args(true).send()
+  const receipt = await signer.provider.waitForTransaction(tx.transactionHash)
+  console.log(await comptrollerContract.calcGav.args(true).call())
+
+  console.log(receipt)
+  console.log('gav', 100)
+  return 100
 }
+
 
 async function getDenominationAssetPrice() {
   // TODO get asset address from the fund
