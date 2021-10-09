@@ -30,6 +30,7 @@ async function main() {
   const emiIndexBalances = emiTokens.map((token) => {
     const emiToken = {}
     emiToken.id = token.id
+    emiToken.symbol = token.symbol
     emiToken.marketCap = token.marketCap
     emiToken.targetBalance = (token.marketCap * gavUSD) / totalMarketCap
     return emiToken
@@ -78,7 +79,7 @@ function determineTokensInIndex(tokensWithMarketCap) {
 async function getTokensWithMarketcap(tokens) {
   const marketCapped = await Promise.all(
     tokens.map(async (token) => {
-      token.marketCap = await getMarketCapForAddress(token.id)
+      token.marketCap = await getMarketCapForAddress(token.id, token.symbol)
       return token
     })
   )
@@ -103,8 +104,8 @@ function applyBlackList(tokens) {
   })
 }
 
-async function getMarketCapForAddress(address) {
-  console.log('Getting marketcap for address...', address)
+async function getMarketCapForAddress(address, symbol) {
+  console.log('Getting marketcap for address...', address, symbol)
   const response = await axios.get(
     `${COINGECKO_BASE_URL}/coins/ethereum/contract/${address}/market_chart/?vs_currency=usd&days=1`
   )
