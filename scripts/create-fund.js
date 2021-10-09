@@ -11,6 +11,7 @@ const { BigNumber } = ethers
 
 const ABIs = {
   FUND_DEPLOYER: require('../external_abi/enzyme/FundDeployer.json'),
+  WETH: require('../external_abi/wrappedETH.json'),
 }
 const addresses = {
   FUND_DEPLOYER: '0x7e6d3b1161DF9c9c7527F68d651B297d2Fdb820B',
@@ -19,7 +20,7 @@ const addresses = {
   ENTRANCE_BURN_FEE: '0x27F74B89B29508091014487253d8D9b88aa0264A',
   ASSET_BLACKLIST: '0xdC1e40174ad831e505E8191881A66e90c3681E33',
   DAI: '0x6b175474e89094c44da98b954eedeac495271d0f',
-  WETHER: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2',
+  WETH: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2',
 }
 
 async function main() {
@@ -48,7 +49,7 @@ async function main() {
   const [comptrollerProxy, vaultProxy] = await fundDeployer.callStatic.createNewFund(
     ownerSigner.address,
     'EMI',
-    addresses.WETHER,
+    addresses.WETH,
     BigNumber.from(timelock24h),
     feeManagerConfig,
     policyManagerConfig
@@ -57,7 +58,7 @@ async function main() {
   const tx = await fundDeployer.createNewFund(
     ownerSigner.address,
     'EMI',
-    addresses.WETHER,
+    addresses.WETH,
     BigNumber.from(timelock24h),
     feeManagerConfig,
     policyManagerConfig
@@ -68,6 +69,10 @@ async function main() {
 
   console.log('Saving deployed addressess...', toSave)
   console.log('Saved to file', saveDeployment(toSave))
+
+  console.log('Seeding fund...')
+  await sendInitialDepositToFund(ownerSigner, '100', comptrollerProxy)
+  console.log('Finished!')
 }
 
 // We recommend this pattern to be able to use async/await everywhere
@@ -138,4 +143,27 @@ function createFeeConfig() {
     ],
   })
   return feeManagerConfig
+}
+
+async function sendInitialDepositToFund(signer, ethAmount, vaultComptrollerAddress) {
+  console.log(`Wrapping ${ethAmount} Ether...`)
+  const etherAmount = ethers.utils.parseEther(ethAmount)
+  const weth = new ethers.Contract(addresses.WETH, ABIs.WETH, signer)
+  const wrapTx = await weth.deposit({ value: etherAmount })
+  await wrapTx.wait()
+  console.log('Wrapped')
+
+  console.log('Approving WETH...')
+  const approveTx = await weth.approve(vaultComptrollerAddress, etherAmount)
+  await approveTx.wait()
+  console.log('Approved')
+  const comptrollerContract = new enzyme.ComptrollerLib(vaultComptrollerAddress, signer)
+  console.log('Buying shares...')
+
+  const investTx = comptrollerContract.buyShares.args([signer.address], [ethAmount], [BigNumber.from('0')])
+  await investTx.send()
+  //console.log(investTxReceipt)
+  console.log('Bought shares!')
+  const [gav] = await comptrollerContract.calcGav.args(true).call()
+  console.log('Gross Asset Value:', gav.toString(), 'ETH')
 }
