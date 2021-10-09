@@ -12,6 +12,8 @@ const ABIs = {
   VAULT: require('../external_abi/enzyme/VaultLib.json'),
 }
 
+let comptrollerContract
+
 async function main() {
   const tokens = await getEnzymeUniverse()
   const filteredTokens = applyBlackList(tokens)
@@ -20,8 +22,9 @@ async function main() {
   const { emiTokens, totalMarketCap } = determineTokensInIndex(tokensWithMarketCap)
 
   const [signer] = await ethers.getSigners()
+  comptrollerContract = new enzyme.ComptrollerLib(fund.comptrollerProxy, signer)
 
-  const gav = await getGav(signer, fund.comptrollerProxy)
+  const gav = await getGav()
   const denAssetPrice = await getDenominationAssetPrice()
   const gavUSD = denAssetPrice * gav
   const emiIndexBalances = emiTokens.map((token) => {
@@ -33,7 +36,6 @@ async function main() {
   })
 
   console.log(emiIndexBalances)
-
 }
 
 // We recommend this pattern to be able to use async/await everywhere
@@ -44,16 +46,12 @@ main().catch((error) => {
 })
 
 async function getGav(signer, comptrollerProxyAddress) {
-  const comptrollerContract = new enzyme.ComptrollerLib(comptrollerProxyAddress, signer)
-  const tx = await comptrollerContract.calcGav.args(true).send()
-  const receipt = await signer.provider.waitForTransaction(tx.transactionHash)
-  console.log(await comptrollerContract.calcGav.args(true).call())
+  
+  const [gav] = await comptrollerContract.calcGav.args(true).call()
 
-  console.log(receipt)
-  console.log('gav', 100)
-  return 100
+  console.log('gav', gav.toNumber())
+  return gav.toNumber()
 }
-
 
 async function getDenominationAssetPrice() {
   // TODO get asset address from the fund
@@ -115,4 +113,27 @@ async function getMarketCapForAddress(address) {
   const marketCap = mostRecent[mostRecent.length - 1]
   console.log('marketcap', marketCap)
   return marketCap
+}
+
+async function tradeOnUniswap(minIncomingAssetAmount, outgoingAssetAmount) {
+  const aPath = 'TODO'
+  const takeOrderArgs = enzyme.uniswapV2TakeOrderArgs({
+    path: aPath, // for example only
+    minIncomingAssetAmount: minIncomingAssetAmount, // for example only
+    outgoingAssetAmount: outgoingAssetAmount, // for example only
+  })
+
+  // assemble and encode the arguments for callOnExtension()
+  const callArgs = enzyme.callOnIntegrationArgs({
+    adapter: addresses.UNISWAP_V2_ADAPTER,
+    selector: enzyme.takeOrderSelector,
+    encodedCallArgs: takeOrderArgs,
+  })
+  const swapTx = comptrollerContract.callOnExtension.args(
+    addresses.INTEGRATION_MANAGER_ADDRESS,
+    enzyme.IntegrationManagerActionId.CallOnIntegration,
+    callArgs
+  )
+
+  const swapTxReceipt = await swapTx.send()
 }
