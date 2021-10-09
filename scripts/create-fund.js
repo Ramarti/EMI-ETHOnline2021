@@ -47,15 +47,6 @@ async function main() {
   const policyManagerConfig = createPoliciesConfig()
 
   console.log('Creating fund...')
-  const [comptrollerProxy, vaultProxy] = await fundDeployer.callStatic.createNewFund(
-    ownerSigner.address,
-    'EMI',
-    addresses.WETH,
-    BigNumber.from(timelock24h),
-    feeManagerConfig,
-    policyManagerConfig
-  )
-
   const tx = await fundDeployer.createNewFund(
     ownerSigner.address,
     'EMI',
@@ -64,7 +55,10 @@ async function main() {
     feeManagerConfig,
     policyManagerConfig
   )
-  await tx.wait()
+
+  const receipt = await tx.wait()
+  const { comptrollerProxy, vaultProxy } = receipt.events.filter((event) => event.event === 'NewFundCreated')[0].args
+
   console.log('Fund created!')
   const toSave = { comptrollerProxy, vaultProxy }
 
