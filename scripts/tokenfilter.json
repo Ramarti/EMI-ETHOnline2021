@@ -1,0 +1,2074 @@
+[
+   {
+      "Data Id":"0x111111111117dc0aa78b770fa6a738034120c302",
+      "Data Name":"1INCH Token",
+      "Data Symbol":"1INCH",
+      "Data Type":"ETH",
+      "Allow":"Include",
+      "Reason":""
+   },
+   {
+      "Data Id":"0xfd2a8fa60abd58efe3eee34dd494cd491dc14900",
+      "Data Name":"Curve.fi aDAI\/aUSDC\/aUSDT",
+      "Data Symbol":"a3CRV",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xd662908ada2ea1916b3318327a97eb18ad588b5d",
+      "Data Name":"Curve.fi a3CRV Gauge Deposit",
+      "Data Symbol":"a3CRV-gauge",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xffc97d72e13e01096502cb8eb52dee56f74dad7b",
+      "Data Name":"Aave interest bearing AAVE",
+      "Data Symbol":"aAAVE",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9",
+      "Data Name":"Aave Token",
+      "Data Symbol":"AAVE",
+      "Data Type":"ETH",
+      "Allow":"Include",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x272f97b7a56a387ae942350bbc7df5700f8a4576",
+      "Data Name":"Aave interest bearing BAL",
+      "Data Symbol":"aBAL",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xa361718326c15715591c299427c62086f69923d9",
+      "Data Name":"Aave interest bearing BUSD",
+      "Data Symbol":"aBUSD",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x8dae6cb04688c62d939ed9b68d32bc62e49970b1",
+      "Data Name":"Aave interest bearing CRV",
+      "Data Symbol":"aCRV",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x028171bca77440897b824ca71d1c56cac55b68a3",
+      "Data Name":"Aave interest bearing DAI",
+      "Data Symbol":"aDAI",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xade00c28244d5ce17d72e40330b1c318cd12b7c3",
+      "Data Name":"AdEx Network",
+      "Data Symbol":"ADX",
+      "Data Type":"USD",
+      "Allow":"Exclude",
+      "Reason":"Non-Ethereum"
+   },
+   {
+      "Data Id":"0xac6df26a590f08dcc95d5a4705ae8abbc88509ef",
+      "Data Name":"Aave interest bearing ENJ",
+      "Data Symbol":"aENJ",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x39c6b3e42d6a679d7d776778fe880bc9487c2eda",
+      "Data Name":"Aave interest bearing KNC",
+      "Data Symbol":"aKNC",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xa06bc25b5805d5f8d82847d191cb4af5a3e873e0",
+      "Data Name":"Aave interest bearing LINK",
+      "Data Symbol":"aLINK",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xa1faa113cbe53436df28ff0aee54275c13b40975",
+      "Data Name":"AlphaToken",
+      "Data Symbol":"ALPHA",
+      "Data Type":"ETH",
+      "Allow":"Include",
+      "Reason":""
+   },
+   {
+      "Data Id":"0xa685a61171bb30d4072b338c80cb7b2c865c873e",
+      "Data Name":"Aave interest bearing MANA",
+      "Data Symbol":"aMANA",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xc713e5e149d5d0715dcd1c156a020976e7e56b88",
+      "Data Name":"Aave interest bearing MKR",
+      "Data Symbol":"aMKR",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xa117000000f279d81a1d3cc75430faa017fa5a2e",
+      "Data Name":"Aragon Network Token",
+      "Data Symbol":"ANT",
+      "Data Type":"ETH",
+      "Allow":"Include",
+      "Reason":""
+   },
+   {
+      "Data Id":"0xcc12abe4ff81c9378d670de1b57f8e0dd228d77a",
+      "Data Name":"Aave interest bearing REN",
+      "Data Symbol":"aREN",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x35f6b052c598d933d69a4eec4d04c73a191fe6c2",
+      "Data Name":"Aave interest bearing SNX",
+      "Data Symbol":"aSNX",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x6c5024cd4f8a59110119c56f8933403a539555eb",
+      "Data Name":"Aave interest bearing SUSD",
+      "Data Symbol":"aSUSD",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xb9d7cb55f463405cdfbe4e90a6d2df01c2b92bf1",
+      "Data Name":"Aave interest bearing UNI",
+      "Data Symbol":"aUNI",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xbcca60bb61934080951369a648fb03df4f96263c",
+      "Data Name":"Aave interest bearing USDC",
+      "Data Symbol":"aUSDC",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x3ed3b47dd13ec9a98b44e6204a523e766b225811",
+      "Data Name":"Aave interest bearing USDT",
+      "Data Symbol":"aUSDT",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x9ff58f4ffb29fa2266ab25e75e2a8b3503311656",
+      "Data Name":"Aave interest bearing WBTC",
+      "Data Symbol":"aWBTC",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x030ba81f1c18d280636f32af80b9aad02cf0854e",
+      "Data Name":"Aave interest bearing WETH",
+      "Data Symbol":"aWETH",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xbb0e17ef65f82ab018d8edd776e8dd940327b28b",
+      "Data Name":"Axie Infinity Shard",
+      "Data Symbol":"AXS",
+      "Data Type":"ETH",
+      "Allow":"Include",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x5165d24277cd063f5ac44efd447b27025e888f37",
+      "Data Name":"Aave interest bearing YFI",
+      "Data Symbol":"aYFI",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xdf7ff54aacacbff42dfe29dd6144a69b629f8c9e",
+      "Data Name":"Aave interest bearing ZRX",
+      "Data Symbol":"aZRX",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x3472a5a71965499acd81997a54bba8d852c6e53d",
+      "Data Name":"Badger",
+      "Data Symbol":"BADGER",
+      "Data Type":"ETH",
+      "Allow":"Include",
+      "Reason":""
+   },
+   {
+      "Data Id":"0xba100000625a3754423978a60c9317c58a424e3d",
+      "Data Name":"Balancer",
+      "Data Symbol":"BAL",
+      "Data Type":"ETH",
+      "Allow":"Include",
+      "Reason":""
+   },
+   {
+      "Data Id":"0xba11d00c5f74255f56a5e366f4f77f5a186d7f55",
+      "Data Name":"BandToken",
+      "Data Symbol":"BAND",
+      "Data Type":"USD",
+      "Allow":"Exclude",
+      "Reason":"Non-Ethereum"
+   },
+   {
+      "Data Id":"0x0d8775f648430679a709e98d2b0cb6250d2887ef",
+      "Data Name":"Basic Attention Token",
+      "Data Symbol":"BAT",
+      "Data Type":"ETH",
+      "Allow":"Include",
+      "Reason":""
+   },
+   {
+      "Data Id":"0xb8c77482e45f1f44de1745f52c74426c631bdd52",
+      "Data Name":"BNB",
+      "Data Symbol":"BNB",
+      "Data Type":"USD",
+      "Allow":"Exclude",
+      "Reason":"Non-Ethereum"
+   },
+   {
+      "Data Id":"0x1f573d6fb3f13d689ff844b4ce37794d79a7ff1c",
+      "Data Name":"Bancor Network Token",
+      "Data Symbol":"BNT",
+      "Data Type":"ETH",
+      "Allow":"Include",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x0391d2021f89dc339f60fff84546ea23e337750f",
+      "Data Name":"BarnBridge Governance Token",
+      "Data Symbol":"BOND",
+      "Data Type":"ETH",
+      "Allow":"Include",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x4fabb145d64652a948d72533023f6e7a623c7c53",
+      "Data Name":"Binance USD",
+      "Data Symbol":"BUSD",
+      "Data Type":"ETH",
+      "Allow":"Exclude",
+      "Reason":"Stablecoin"
+   },
+   {
+      "Data Id":"0x56d811088235f11c8920698a204a5010a788f4b3",
+      "Data Name":"bZx Protocol Token",
+      "Data Symbol":"BZRX",
+      "Data Type":"ETH",
+      "Allow":"Include",
+      "Reason":""
+   },
+   {
+      "Data Id":"0xe65cdb6479bac1e22340e4e755fae7e509ecd06c",
+      "Data Name":"Compound Aave Token",
+      "Data Symbol":"cAAVE",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x6c8c6b02e7b2be14d4fa6022dfd6d75921d90e4e",
+      "Data Name":"Compound Basic Attention Token",
+      "Data Symbol":"cBAT",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x70e36f6bf80a52b3b46b3af8e106cc0ed743e8e4",
+      "Data Name":"Compound Collateral",
+      "Data Symbol":"cCOMP",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+      "Data Name":"Compound Dai",
+      "Data Symbol":"cDAI",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xaaaebe6fe48e54f431b0c390cfaf0b017d09d42d",
+      "Data Name":"Celsius",
+      "Data Symbol":"CEL",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5",
+      "Data Name":"Compound Ether",
+      "Data Symbol":"cETH",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x06af07097c9eeb7fd685c692751d5c66db49c215",
+      "Data Name":"Chai",
+      "Data Symbol":"CHAI",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x95b4ef2869ebd94beb4eee400a99824bf5dc325b",
+      "Data Name":"Compound Maker",
+      "Data Symbol":"cMKR",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xc00e94cb662c3520282e6f5717214004a7f26888",
+      "Data Name":"Compound",
+      "Data Symbol":"COMP",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x4688a8b1f292fdab17e9a90c8bc379dc1dbd8713",
+      "Data Name":"Cover Protocol Governance Token",
+      "Data Symbol":"COVER",
+      "Data Type":"USD",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x158079ee67fce2f58472a96584a73c7ab9ac95c1",
+      "Data Name":"Compound Augur",
+      "Data Symbol":"cREP",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b",
+      "Data Name":"CRO",
+      "Data Symbol":"CRO",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0xd533a949740bb3306d119cc777fa900ba034cd52",
+      "Data Name":"Curve DAO Token",
+      "Data Symbol":"CRV",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x4b0181102a0112a2ef11abee5563bb4a3176c9d7",
+      "Data Name":"Compound Sushi Token",
+      "Data Symbol":"cSUSHI",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x35a18000230da775cac24873d00ff85bccded550",
+      "Data Name":"Compound Uniswap",
+      "Data Symbol":"cUNI",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x39aa39c021dfbae8fac545936693ac917d5e7563",
+      "Data Name":"Compound USD Coin",
+      "Data Symbol":"cUSDC",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9",
+      "Data Name":"Compound USDT",
+      "Data Symbol":"cUSDT",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xc11b1268c1a384e55c48c2391d8d480264a3a7f4",
+      "Data Name":"Compound Wrapped BTC",
+      "Data Symbol":"cWBTC",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x80a2ae356fc9ef4305676f7a3e2ed04e12c33946",
+      "Data Name":"Compound yearn.finance",
+      "Data Symbol":"cYFI",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xb3319f5d18bc0d84dd1b4825dcde5d5f7266d407",
+      "Data Name":"Compound 0x",
+      "Data Symbol":"cZRX",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x6b175474e89094c44da98b954eedeac495271d0f",
+      "Data Name":"Dai Stablecoin",
+      "Data Symbol":"DAI",
+      "Data Type":"ETH",
+      "Allow":"Exclude",
+      "Reason":"Stablecoin"
+   },
+   {
+      "Data Id":"0xed91879919b71bb6905f23af0a68d231ecf87b14",
+      "Data Name":"DMM: Governance",
+      "Data Symbol":"DMG",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x1494ca1f11d487c2bbe4543e90080aeba4ba3c2b",
+      "Data Name":"DefiPulse Index",
+      "Data Symbol":"DPI",
+      "Data Type":"ETH",
+      "Allow":"Exclude",
+      "Reason":"Derivative"
+   },
+   {
+      "Data Id":"0xa3d87fffce63b53e0d54faa1cc983b7eb0b74a9c",
+      "Data Name":"Curve.fi ETH\/sETH",
+      "Data Symbol":"eCRV",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x3c0ffff15ea30c35d7a85b85c0782d6c94e1d238",
+      "Data Name":"Curve.fi ETH\/sETH Gauge Deposit",
+      "Data Symbol":"eCRV-gauge",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xf629cbd94d3791c9250152bd8dfbdf380e2a3b9c",
+      "Data Name":"Enjin Coin",
+      "Data Symbol":"ENJ",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x194ebd173f6cdace046c53eacce9b953f28411d1",
+      "Data Name":"Curve.fi EURS\/sEUR",
+      "Data Symbol":"eursCRV",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x90bb609649e0451e5ad952683d64bd2d1f245840",
+      "Data Name":"Curve.fi eursCRV Gauge Deposit",
+      "Data Symbol":"eursCRV-gauge",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x4e15361fd6b4bb609fa63c81a2be19d873717870",
+      "Data Name":"Fantom Token",
+      "Data Symbol":"FTM",
+      "Data Type":"ETH",
+      "Allow":"Exclude",
+      "Reason":"Non-Ethereum"
+   },
+   {
+      "Data Id":"0x50d1c9771902476076ecfc8b2a83ad6b9355a4c9",
+      "Data Name":"FTT",
+      "Data Symbol":"FTX Token",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x3f382dbd960e3a9bbceae22651e88158d2791550",
+      "Data Name":"Aavegotchi GHST Token",
+      "Data Symbol":"GHST",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0xc944e90c64b2c07662a292be6244bdf05cda44a7",
+      "Data Name":"Graph Token",
+      "Data Symbol":"GRT",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0xde30da39c46104798bb5aa3fe8b9e0e1f348163f",
+      "Data Name":"Gitcoin",
+      "Data Symbol":"GTC",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x584bc13c7d411c00c01a62e8019472de68768430",
+      "Data Name":"Hegic",
+      "Data Symbol":"HEGIC",
+      "Data Type":"USD",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x176c674ee533c6139b0dc8b458d72a93dcb3e705",
+      "Data Name":"Synth iAAVE",
+      "Data Symbol":"iAAVE",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x8a8079c7149b8a1611e5c5d978dca3be16545f83",
+      "Data Name":"Synth iADA",
+      "Data Symbol":"iADA",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xf6e9b246319ea30e8c2fa2d1540aaebf6f9e1b89",
+      "Data Name":"Synth iBCH",
+      "Data Symbol":"iBCH",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x67b66c99d3eb37fa76aa3ed1ff33e8e39f0b9c7a",
+      "Data Name":"Interest Bearing ETH",
+      "Data Symbol":"ibETH",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xafd870f32ce54efdbf677466b612bf8ad164454b",
+      "Data Name":"Synth iBNB",
+      "Data Symbol":"iBNB",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xd6014ea05bde904448b743833ddf07c3c7837481",
+      "Data Name":"Synth iBTC",
+      "Data Symbol":"iBTC",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x336213e1ddfc69f4701fc3f86f4ef4a160c1159d",
+      "Data Name":"Synth iCEX",
+      "Data Symbol":"iCEX",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x6345728b1cce16e6f8c509950b5c84fff88530d9",
+      "Data Name":"Synth iCOMP",
+      "Data Symbol":"iCOMP",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xcb98f42221b2c251a4e74a1609722ee09f0cc08e",
+      "Data Name":"Synth iDASH",
+      "Data Symbol":"iDASH",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x14d10003807ac60d07bb0ba82caeac8d2087c157",
+      "Data Name":"Synth iDEFI",
+      "Data Symbol":"iDEFI",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xa14ea0e11121e6e951e87c66afe460a00bcd6a16",
+      "Data Name":"IdleDAI v4 [Risk adjusted]",
+      "Data Symbol":"idleDAISafe",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Derivative"
+   },
+   {
+      "Data Id":"0x3fe7940616e5bc47b0775a0dccf6237893353bb4",
+      "Data Name":"IdleDAI v4 [Best yield]",
+      "Data Symbol":"idleDAIYield",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Derivative"
+   },
+   {
+      "Data Id":"0xf52cdcd458bf455aed77751743180ec4a595fd3f",
+      "Data Name":"IdleSUSD v4 [Best yield]",
+      "Data Symbol":"idleSUSDYield",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Derivative"
+   },
+   {
+      "Data Id":"0xc278041fdd8249fe4c1aad1193876857eea3d68c",
+      "Data Name":"IdleTUSD v4 [Best yield]",
+      "Data Symbol":"idleTUSDYield",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Derivative"
+   },
+   {
+      "Data Id":"0x3391bc034f2935ef0e1e41619445f998b2680d35",
+      "Data Name":"IdleUSDC v4 [Risk adjusted]",
+      "Data Symbol":"idleUSDCSafe",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Derivative"
+   },
+   {
+      "Data Id":"0x5274891bec421b39d23760c04a6755ecb444797c",
+      "Data Name":"IdleUSDC v4 [Best yield]",
+      "Data Symbol":"idleUSDCYield",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Derivative"
+   },
+   {
+      "Data Id":"0x28fac5334c9f7262b3a3fe707e250e01053e07b5",
+      "Data Name":"IdleUSDT v4 [Risk adjusted]",
+      "Data Symbol":"idleUSDTSafe",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Derivative"
+   },
+   {
+      "Data Id":"0xf34842d05a1c888ca02769a633df37177415c2f8",
+      "Data Name":"IdleUSDT v4 [Best yield]",
+      "Data Symbol":"idleUSDTYield",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Derivative"
+   },
+   {
+      "Data Id":"0x8c81121b15197fa0eeaee1dc75533419dcfd3151",
+      "Data Name":"IdleWBTC v4 [Best yield]",
+      "Data Symbol":"idleWBTCYield",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Derivative"
+   },
+   {
+      "Data Id":"0xc8e6ca6e96a326dc448307a5fde90a0b21fd7f80",
+      "Data Name":"IdleWETH v4 [Best yield]",
+      "Data Symbol":"idleWETHYield",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Derivative"
+   },
+   {
+      "Data Id":"0x46a97629c9c1f58de6ec18c7f536e7e6d6a6ecde",
+      "Data Name":"Synth iDOT",
+      "Data Symbol":"iDOT",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xf4eebdd0704021ef2a6bbe993fdf93030cd784b4",
+      "Data Name":"Synth iEOS",
+      "Data Symbol":"iEOS",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xd50c1746d835d2770dda3703b69187bffeb14126",
+      "Data Name":"Synth iETC",
+      "Data Symbol":"iETC",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xa9859874e1743a32409f75bb11549892138bba1e",
+      "Data Name":"Synth iETH",
+      "Data Symbol":"iETH",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x2d7ac061fc3db53c39fe1607fb8cec1b2c162b01",
+      "Data Name":"Synth iLINK",
+      "Data Symbol":"iLINK",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x79da1431150c9b82d2e5dfc1c68b33216846851e",
+      "Data Name":"Synth iLTC",
+      "Data Symbol":"iLTC",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xe28b3b32b6c345a34ff64674606124dd5aceca30",
+      "Data Name":"Injective Token",
+      "Data Symbol":"INJ",
+      "Data Type":"USD",
+      "Allow":"Exclude",
+      "Reason":"Non-Ethereum"
+   },
+   {
+      "Data Id":"0xa5a5df41883cdc00c4ccc6e8097130535399d9a3",
+      "Data Name":"Synth iOIL",
+      "Data Symbol":"iOIL",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x0fed38108bdb8e62ef7b5680e8e0726e2f29e0de",
+      "Data Name":"Synth iREN",
+      "Data Symbol":"iREN",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xc5807183a9661a533cb08cbc297594a0b864dc12",
+      "Data Name":"Synth iTRX",
+      "Data Symbol":"iTRX",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x36a00ff9072570ef4b9292117850b8fe08d96cce",
+      "Data Name":"Synth iUNI",
+      "Data Symbol":"iUNI",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x4adf728e2df4945082cdd6053869f51278fae196",
+      "Data Name":"Synth iXMR",
+      "Data Symbol":"iXMR",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x27269b3e45a4d3e79a3d6bfee0c8fb13d0d711a6",
+      "Data Name":"Synth iXRP",
+      "Data Symbol":"iXRP",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x8deef89058090ac5655a99eeb451a4f9183d1678",
+      "Data Name":"Synth iXTZ",
+      "Data Symbol":"iXTZ",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x592244301cea952d6dab2fdc1fe6bd9e53917306",
+      "Data Name":"Synth iYFI",
+      "Data Symbol":"iYFI",
+      "Data Type":"DERIVATIVE",
+      "Allow":"",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xdd974d5c2e2928dea5f71b9825b8b646686bd200",
+      "Data Name":"Kyber Network Crystal",
+      "Data Symbol":"KNC",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0xdefa4e8a7bcba345f687a2f1456f5edd9ce97202",
+      "Data Name":"Kyber Network Crystal v2",
+      "Data Symbol":"KNC",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x5a98fcbea516cf06857215779fd812ca3bef1b32",
+      "Data Name":"Lido DAO Token",
+      "Data Symbol":"LDO",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x514910771af9ca656af840dff83e8264ecf986ca",
+      "Data Name":"ChainLink Token",
+      "Data Symbol":"LINK",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x0000000000095413afc295d19edeb1ad7b71c952",
+      "Data Name":"Tokenlon",
+      "Data Symbol":"LON",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0xbbbbca6a901c926f240b89eacb641d8aec7aeafd",
+      "Data Name":"LoopringCoin V2",
+      "Data Symbol":"LRC",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x0f5d2fb29fb7d3cfee444a200298f468908cc942",
+      "Data Name":"Decentraland MANA",
+      "Data Symbol":"MANA",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0",
+      "Data Name":"Matic Token",
+      "Data Symbol":"MATIC",
+      "Data Type":"USD",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2",
+      "Data Name":"Maker",
+      "Data Symbol":"MKR",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0xec67005c4e498ec7f55e092bd1d35cbc47c91892",
+      "Data Name":"Melon Token",
+      "Data Symbol":"MLN",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x1776e1f26f98b1a5df9cd347953a26dd3cb46671",
+      "Data Name":"Numeraire",
+      "Data Symbol":"NMR",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x4fe83213d56308330ec302a8bd641f1d0113a4cc",
+      "Data Name":"NuCypher",
+      "Data Symbol":"NU",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x8207c1ffc5b6804f6024322ccf34f29c3541ae26",
+      "Data Name":"OriginToken",
+      "Data Symbol":"OGN",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x0258f474786ddfd37abce6df6bbb1dd5dfc4434a",
+      "Data Name":"Orion Protocol",
+      "Data Symbol":"ORN",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x4575f41308ec1483f3d399aa9a2826d74da13deb",
+      "Data Name":"Orchid",
+      "Data Symbol":"OXT",
+      "Data Type":"USD",
+      "Allow":"Exclude",
+      "Reason":"Non-Ethereum"
+   },
+   {
+      "Data Id":"0xbc396689893d065f41bc2c6ecbee5e0085233447",
+      "Data Name":"Perpetual",
+      "Data Symbol":"PERP",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x03ab458634910aad20ef5f1c8ee96f1d6ac54919",
+      "Data Name":"Rai Reflex Index",
+      "Data Symbol":"RAI",
+      "Data Type":"ETH",
+      "Allow":"Exclude",
+      "Reason":"Stablecoin"
+   },
+   {
+      "Data Id":"0xfca59cd816ab1ead66534d82bc21e7515ce441cf",
+      "Data Name":"Rarible",
+      "Data Symbol":"RARI",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x408e41876cccdc0f92210600ef50372656052a38",
+      "Data Name":"Republic Token",
+      "Data Symbol":"REN",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x221657776846890989a759ba2973e427dff5c9bb",
+      "Data Name":"Reputation",
+      "Data Symbol":"REPv2",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0xd291e7a03283640fdc51b121ac401383a46cc623",
+      "Data Name":"Rari Governance Token",
+      "Data Symbol":"RGT",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x607f4c5bb672230e8672085532f7e901544a7375",
+      "Data Name":"iEx.ec Network Token",
+      "Data Symbol":"RLC",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x3155ba85d5f96b2d030a4966af206230e46849cb",
+      "Data Name":"THORChain ETH.RUNE",
+      "Data Symbol":"RUNE",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0xcd39b5434a0a92cf47d1f567a7df84be356814f0",
+      "Data Name":"Synth s1INCH",
+      "Data Symbol":"s1INCH",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x7537aae01f3b218dae75e10d952473823f961b87",
+      "Data Name":"Synth sAAPL",
+      "Data Symbol":"sAAPL",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xd2df355c19471c8bd7d8a3aa27ff4e26a21b4076",
+      "Data Name":"Synth sAAVE",
+      "Data Symbol":"sAAVE",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xe36e2d3c7c34281fa3bc737950a68571736880a1",
+      "Data Name":"Synth sADA",
+      "Data Symbol":"sADA",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x9cf7e61853ea30a41b02169391b393b901eac457",
+      "Data Name":"Synth sAMZN",
+      "Data Symbol":"sAMZN",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x3845badade8e6dff049820680d1f14bd3903a5d0",
+      "Data Name":"SAND",
+      "Data Symbol":"SAND",
+      "Data Type":"USD",
+      "Allow":"Exclude",
+      "Reason":"Non-Ethereum"
+   },
+   {
+      "Data Id":"0xf48e200eaf9906362bb1442fca31e0835773b8b4",
+      "Data Name":"Synth sAUD",
+      "Data Symbol":"sAUD",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x36a2422a863d5b950882190ff5433e513413343a",
+      "Data Name":"Synth sBCH",
+      "Data Symbol":"sBCH",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x617aecb6137b5108d1e7d4918e3725c8cebdb848",
+      "Data Name":"Synth sBNB",
+      "Data Symbol":"sBNB",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xfe18be6b3bd88a2d2a7f928d00292e7a9963cfc6",
+      "Data Name":"Synth sBTC",
+      "Data Symbol":"sBTC",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xeabacd844a196d7faf3ce596edebf9900341b420",
+      "Data Name":"Synth sCEX",
+      "Data Symbol":"sCEX",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x0f83287ff768d1c1e17a42f44d644d7f22e8ee1d",
+      "Data Name":"Synth sCHF",
+      "Data Symbol":"sCHF",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xeb029507d3e043dd6c87f2917c4e82b902c35618",
+      "Data Name":"Synth sCOMP",
+      "Data Symbol":"sCOMP",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xd38aeb759891882e78e957c80656572503d8c1b1",
+      "Data Name":"Synth sCRV",
+      "Data Symbol":"sCRV",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xfe33ae95a9f0da8a845af33516edc240dcd711d6",
+      "Data Name":"Synth sDASH",
+      "Data Symbol":"sDASH",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xe1afe1fd76fd88f78cbf599ea1846231b8ba3b6b",
+      "Data Name":"Synth sDEFI",
+      "Data Symbol":"sDEFI",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x1715ac0743102bf5cd58efbb6cf2dc2685d967b6",
+      "Data Name":"Synth sDOT",
+      "Data Symbol":"sDOT",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x88c8cf3a212c0369698d13fe98fcb76620389841",
+      "Data Name":"Synth sEOS",
+      "Data Symbol":"sEOS",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x22602469d704bffb0936c7a7cfcd18f7aa269375",
+      "Data Name":"Synth sETC",
+      "Data Symbol":"sETC",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x5e74c9036fb86bd7ecdcb084a0673efc32ea31cb",
+      "Data Name":"Synth sETH",
+      "Data Symbol":"sETH",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xd71ecff9342a5ced620049e616c5035f1db98620",
+      "Data Name":"Synth sEUR",
+      "Data Symbol":"sEUR",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xf50b5e535f62a56a9bd2d8e2434204e726c027fa",
+      "Data Name":"Synth sFB",
+      "Data Symbol":"sFB",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xb753428af26e81097e7fd17f40c88aaa3e04902c",
+      "Data Name":"Spice",
+      "Data Symbol":"SFI",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x23348160d7f5aca21195df2b70f28fce2b0be9fc",
+      "Data Name":"Synth sFTSE",
+      "Data Symbol":"sFTSE",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x97fe22e7341a0cd8db6f6c021a24dc8f4dad855f",
+      "Data Name":"Synth sGBP",
+      "Data Symbol":"sGBP",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xc63b8ecce56ab9c46184ec6ab85e4771fea4c8ad",
+      "Data Name":"Synth sGOOG",
+      "Data Symbol":"sGOOG",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xf6b1c627e95bfc3c1b4c9b825a032ff0fbf3e07d",
+      "Data Name":"Synth sJPY",
+      "Data Symbol":"sJPY",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xbbc455cb4f1b9e4bfc4b73970d360c8f032efee6",
+      "Data Name":"Synth sLINK",
+      "Data Symbol":"sLINK",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xc14103c2141e842e228fbac594579e798616ce7a",
+      "Data Name":"Synth sLTC",
+      "Data Symbol":"sLTC",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x5a7e3c07604eb515c16b36cd51906a65f021f609",
+      "Data Name":"Synth sNFLX",
+      "Data Symbol":"sNFLX",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x757de3ac6b830a931ef178c6634c5c551773155c",
+      "Data Name":"Synth sNIKKEI",
+      "Data Symbol":"sNIKKEI",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f",
+      "Data Name":"Synthetix Network Token",
+      "Data Symbol":"SNX",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x6d16cf3ec5f763d4d99cb0b0b110eefd93b11b56",
+      "Data Name":"Synth sOIL",
+      "Data Symbol":"sOIL",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0xd31533e8d0f3df62060e94b3f1318137bb6e3525",
+      "Data Name":"Synth sREN",
+      "Data Symbol":"sREN",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x0352557b007a4aae1511c114409b932f06f9e2f4",
+      "Data Name":"Synth sRUNE",
+      "Data Symbol":"sRUNE",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x0ae055097c6d159879521c384f1d2123d1f195e6",
+      "Data Name":"STAKE",
+      "Data Symbol":"STAKE",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x06325440d014e39736583c165c2963ba99faf14e",
+      "Data Name":"Curve.fi ETH\/stETH",
+      "Data Symbol":"steCRV",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Derivative"
+   },
+   {
+      "Data Id":"0x182b723a58739a9c974cfdb385ceadb237453c28",
+      "Data Name":"Curve.fi steCRV Gauge Deposit",
+      "Data Symbol":"steCRV-gauge",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Derivative"
+   },
+   {
+      "Data Id":"0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "Data Name":"Liquid staked Ether 2.0",
+      "Data Symbol":"stETH",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Derivative"
+   },
+   {
+      "Data Id":"0xdfe66b14d37c77f4e9b180ceb433d1b164f0281d",
+      "Data Name":"stakedETH",
+      "Data Symbol":"stETH",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Derivative"
+   },
+   {
+      "Data Id":"0xf2e08356588ec5cd9e437552da87c0076b4970b0",
+      "Data Name":"Synth sTRX",
+      "Data Symbol":"sTRX",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x918da91ccbc32b7a6a0cc4ecd5987bbab6e31e6d",
+      "Data Name":"Synth sTSLA",
+      "Data Symbol":"sTSLA",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x30635297e450b930f8693297eba160d9e6c8ebcf",
+      "Data Name":"Synth sUNI",
+      "Data Symbol":"sUNI",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x57ab1ec28d129707052df4df418d58a2d46d5f51",
+      "Data Name":"Synth sUSD",
+      "Data Symbol":"sUSD",
+      "Data Type":"ETH",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x6b3595068778dd592e39a122f4f5a5cf09c90fe2",
+      "Data Name":"SushiToken",
+      "Data Symbol":"SUSHI",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x6a22e5e94388464181578aa7a6b869e00fe27846",
+      "Data Name":"Synth sXAG",
+      "Data Symbol":"sXAG",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x261efcdd24cea98652b9700800a13dfbca4103ff",
+      "Data Name":"Synth sXAU",
+      "Data Symbol":"sXAU",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x5299d6f7472dcc137d7f3c4bcfbbb514babf341a",
+      "Data Name":"Synth sXMR",
+      "Data Symbol":"sXMR",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x8ce9137d39326ad0cd6491fb5cc0cba0e089b6a9",
+      "Data Name":"Swipe",
+      "Data Symbol":"SXP",
+      "Data Type":"USD",
+      "Allow":"Exclude",
+      "Reason":"Non-Ethereum"
+   },
+   {
+      "Data Id":"0xa2b0fde6d710e201d0d608e924a484d1a5fed57c",
+      "Data Name":"Synth sXRP",
+      "Data Symbol":"sXRP",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x2e59005c5c0f0a4d77cca82653d48b46322ee5cd",
+      "Data Name":"Synth sXTZ",
+      "Data Symbol":"sXTZ",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x992058b7db08f9734d84485bfbc243c4ee6954a7",
+      "Data Name":"Synth sYFI",
+      "Data Symbol":"sYFI",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Synthetic"
+   },
+   {
+      "Data Id":"0x4c19596f5aaff459fa38b0f7ed92f11ae6543784",
+      "Data Name":"TrueFi",
+      "Data Symbol":"TRU",
+      "Data Type":"USD",
+      "Allow":"Exclude",
+      "Reason":"Non-Ethereum"
+   },
+   {
+      "Data Id":"0x0000000000085d4780b73119b644ae5ecd22b376",
+      "Data Name":"TrueUSD",
+      "Data Symbol":"TUSD",
+      "Data Type":"ETH",
+      "Allow":"Exclude",
+      "Reason":"Stablecoin"
+   },
+   {
+      "Data Id":"0x04fa0d235c4abf4bcf4787af4cf447de572ef828",
+      "Data Name":"UMA Voting Token v1",
+      "Data Symbol":"UMA",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+      "Data Name":"Uniswap",
+      "Data Symbol":"UNI",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0x004375dff511095cc5a197a54140a24efef3a416",
+      "Data Name":"Uniswap WBTC\/USDC Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852",
+      "Data Name":"Uniswap WETH\/USDT Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x11b1f53204d03e5529f09eb3091939e4fd8c9cf3",
+      "Data Name":"Uniswap MANA\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x1273ad5d8f3596a7a39efdb5a4b8f82e8f003fc3",
+      "Data Name":"Uniswap HEGIC\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x15ab0333985fd1e289adf4fbbe19261454776642",
+      "Data Name":"Uniswap WETH\/MLN Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x23bff8ca20aac06efdf23cee3b8ae296a30dfd27",
+      "Data Name":"Uniswap wNXM\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x26aad2da94c59524ac0d93f6d6cbf9071d7086f2",
+      "Data Name":"Uniswap 1INCH\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x2fdbadf3c4d5a8666bc06645b8358ab803996e28",
+      "Data Name":"Uniswap YFI\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x3041cbd36888becc7bbcbc0045e3b1f144466f5f",
+      "Data Name":"Uniswap USDC\/USDT Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x3da1313ae46132a397d90d95b1424a9a7e3e0fce",
+      "Data Name":"Uniswap WETH\/CRV Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x3fd4cf9303c4bc9e13772618828712c8eac7dd2f",
+      "Data Name":"Uniswap BNT\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x43ae24960e5534731fc831386c07755a2dc33d47",
+      "Data Name":"Uniswap SNX\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x448a0a42f55142971bb3ea45e64528d3e4114f9e",
+      "Data Name":"Uniswap WETH\/stETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x524847c615639e76fe7d0fe0b16be8c4eac9cf3c",
+      "Data Name":"Uniswap BUSD\/USDC Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x6c8b0dee9e90ea9f790da5daf6f5b20d23b39689",
+      "Data Name":"Uniswap ORN\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x6d57a53a45343187905aad6ad8ed532d105697c1",
+      "Data Name":"Uniswap RLC\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x8175362afbeee32afb22d05adc0bbd08de32f5ae",
+      "Data Name":"Uniswap WETH\/DMG Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x84e99ccc19da8290a754cb015ca188676d695f0a",
+      "Data Name":"Uniswap COVER\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x8878df9e1a7c87dcbf6d3999d997f262c05d8c70",
+      "Data Name":"Uniswap LRC\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x88d97d199b9ed37c29d846d00d443de980832a22",
+      "Data Name":"Uniswap UMA\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x8979a3ef9d540480342ac0f56e9d4c88807b1cba",
+      "Data Name":"Uniswap REPv2\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x8bd1661da98ebdd3bd080f0be4e6d9be8ce9858c",
+      "Data Name":"Uniswap REN\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x90704ac59e7e54632b0cc9d22573aecd7eb094ad",
+      "Data Name":"Uniswap CRO\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x9b533f1ceaa5ceb7e5b8994ef16499e47a66312d",
+      "Data Name":"Uniswap OXT\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x9def9511fec79f83afcbffe4776b1d817dc775ae",
+      "Data Name":"Uniswap ANT\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xa0abda1f980e03d7eadb78aed8fc1f2dd0fe83dd",
+      "Data Name":"Uniswap BUSD\/USDT Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xa2107fa5b38d9bbd2c461d6edf11b11a50f6b974",
+      "Data Name":"Uniswap LINK\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xa478c2975ab1ea89e8196811f51a7b7ade33eb11",
+      "Data Name":"Uniswap DAI\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xa70d458a4d9bc0e6571565faee18a48da5c0d593",
+      "Data Name":"Uniswap BAL\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xac317d14738a454ff20b191ba3504aa97173045b",
+      "Data Name":"Uniswap SXP\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xae461ca67b15dc8dc81ce7615e0320da1a9ab8d5",
+      "Data Name":"Uniswap DAI\/USDC Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xb20bd5d04be54f870d5c0d3ca85d82b34b836405",
+      "Data Name":"Uniswap DAI\/USDT Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xb4d0d9df2738abe81b87b66c80851292492d1404",
+      "Data Name":"Uniswap TUSD\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc",
+      "Data Name":"Uniswap USDC\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xb6909b960dbbe7392d405429eb2b3649752b4838",
+      "Data Name":"Uniswap BAT\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xb784ced6994c928170b417bbd052a096c6fb17e2",
+      "Data Name":"Uniswap NMR\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xb9b752f7f4a4680eeb327ffe728f46666763a796",
+      "Data Name":"Uniswap BZRX\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xbb2b8038a1640196fbe3e38816f3e67cba72d940",
+      "Data Name":"Uniswap WBTC\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xc2adda861f89bbb333c90c492cb837741916a225",
+      "Data Name":"Uniswap MKR\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xc6f348dd3b91a56d117ec0071c1e9b83c0996de4",
+      "Data Name":"Uniswap WETH\/ZRX Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xce2cc0513634cef3a7c9c257e294ef5e3092f185",
+      "Data Name":"Uniswap OGN\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xce84867c3c02b05dc570d0135103d3fb9cc19433",
+      "Data Name":"Uniswap SUSHI\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xcffdded873554f362ac02f8fb1f02e5ada10516f",
+      "Data Name":"Uniswap COMP\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xd3772a963790fede65646cfdae08734a17cd0f47",
+      "Data Name":"Uniswap ADX\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xd3d2e2692501a5c9ca623199d38826e513033a17",
+      "Data Name":"Uniswap UNI\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xdfc14d2af169b0d36c4eff567ada9b2e0cae044f",
+      "Data Name":"Uniswap AAVE\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xe56c60b5f9f7b5fc70de0eb79c6ee7d00efa2625",
+      "Data Name":"Uniswap WETH\/ENJ Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xf421c3f2e695c2d4c0765379ccace8ade4a480d9",
+      "Data Name":"Uniswap BAND\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xf49c43ae0faf37217bdcb00df478cf793edd6687",
+      "Data Name":"Uniswap WETH\/KNC Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xf80758ab42c3b07da84053fd88804bcb6baa4b5c",
+      "Data Name":"Uniswap sUSD\/WETH Pool",
+      "Data Symbol":"UNI-V2",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "Data Name":"USD Coin",
+      "Data Symbol":"USDC",
+      "Data Type":"ETH",
+      "Allow":"Exclude",
+      "Reason":"Stablecoin"
+   },
+   {
+      "Data Id":"0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "Data Name":"Tether USD",
+      "Data Symbol":"USDT",
+      "Data Type":"ETH",
+      "Allow":"Exclude",
+      "Reason":"Stablecoin"
+   },
+   {
+      "Data Id":"0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+      "Data Name":"Wrapped BTC",
+      "Data Symbol":"WBTC",
+      "Data Type":"ETH",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x123151402076fc819b7564510989e475c9cd93ca",
+      "Data Name":"wrapped-DGLD",
+      "Data Symbol":"wDGLD",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "Data Name":"Wrapped Ether",
+      "Data Symbol":"WETH",
+      "Data Type":"ETH",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x0d438f3b5175bebc262bf23753c1e53d03432bde",
+      "Data Name":"Wrapped NXM",
+      "Data Symbol":"wNXM",
+      "Data Type":"ETH",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e",
+      "Data Name":"yearn.finance",
+      "Data Symbol":"YFI",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   },
+   {
+      "Data Id":"0xb8c3b7a2a618c552c23b1e4701109a9e756bab67",
+      "Data Name":"1INCH yVault",
+      "Data Symbol":"yv1INCH",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x39caf13a104ff567f71fd2a4c68c026fdb6e740b",
+      "Data Name":"Curve Aave Pool yVault",
+      "Data Symbol":"yvCurve-Aave",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x25212df29073fffa7a67399acefc2dd75a831a1a",
+      "Data Name":"Curve EURS Pool yVault",
+      "Data Symbol":"yvCurve-EURS",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x986b4aff588a109c09b50a03f42e4110e29d353f",
+      "Data Name":"Curve sETH Pool yVault",
+      "Data Symbol":"yvCurve-sETH",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0xdcd90c7f6324cfa40d7169ef80b12031770b4325",
+      "Data Name":"Curve stETH Pool yVault",
+      "Data Symbol":"yvCurve-stETH",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Pool"
+   },
+   {
+      "Data Id":"0x19d3364a399d251e894ac732651be8b0e4e85001",
+      "Data Name":"DAI yVault",
+      "Data Symbol":"yvDAI",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x671a912c10bba0cfa74cfc2d6fba9ba1ed9530b2",
+      "Data Name":"LINK yVault",
+      "Data Symbol":"yvLINK",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x873fb544277fd7b977b196a826459a69e27ea4ea",
+      "Data Name":"RAI yVault",
+      "Data Symbol":"yvRAI",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xf29ae508698bdef169b89834f76704c3b205aedf",
+      "Data Name":"SNX yVault",
+      "Data Symbol":"yvSNX",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xa5ca62d95d24a4a350983d5b8ac4eb8638887396",
+      "Data Name":"sUSD yVault",
+      "Data Symbol":"yvsUSD",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xfbeb78a723b8087fd2ea7ef1afec93d35e8bed42",
+      "Data Name":"UNI yVault",
+      "Data Symbol":"yvUNI",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x5f18c75abdae578b483e5f43f12a39cf75b973a9",
+      "Data Name":"USDC yVault",
+      "Data Symbol":"yvUSDC",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0x7da96a3891add058ada2e826306d812c638d87a7",
+      "Data Name":"USDT yVault",
+      "Data Symbol":"yvUSDT",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xa696a63cc78dffa1a63e9e50587c197387ff6c7e",
+      "Data Name":"WBTC yVault",
+      "Data Symbol":"yvWBTC",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xa258c4606ca8206d8aa700ce2143d7db854d168c",
+      "Data Name":"WETH yVault",
+      "Data Symbol":"yvWETH",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xe14d13d8b3b85af791b2aadd661cdbd5e6097db1",
+      "Data Name":"YFI yVault",
+      "Data Symbol":"yvYFI",
+      "Data Type":"DERIVATIVE",
+      "Allow":"Exclude",
+      "Reason":"Wrapped"
+   },
+   {
+      "Data Id":"0xe41d2489571d322189246dafa5ebde1f4699f498",
+      "Data Name":"0x Protocol Token",
+      "Data Symbol":"ZRX",
+      "Data Type":"ETH",
+      "Allow":"",
+      "Reason":""
+   }
+]
