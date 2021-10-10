@@ -1,15 +1,27 @@
 const axios = require('axios')
 const hre = require('hardhat')
-const enzyme = require('@enzymefinance/protocol')
+const fs = require('fs')
 const ethers = hre.ethers
+const { parseEther, formatEther } = ethers.utils
+const enzyme = require('@enzymefinance/protocol')
+const { getTradeDetails, estimateSellTokenAmountForTarget } = require('./utils/uniswapHelpers.js')
+
 const fund = require('../deployment/fund.json')
 const tokenFilter = require('./tokenfilter.json')
 const MAX_TOKENS = 20 // By Enzyme
 const ENZYME_UNIVERSE_URL = 'https://services.enzyme.finance/api/enzyme/asset/list'
 const COINGECKO_BASE_URL = 'https://api.coingecko.com/api/v3/'
 
+// TODO take this out to constant file in utils
 const ABIs = {
   VAULT: require('../external_abi/enzyme/VaultLib.json'),
+  TOKEN: require('../external_abi/wrappedETH.json'), // we just need balanceOf, should be its own ABI maybe
+}
+
+const addresses = {
+  UNISWAP_V2_ADAPTER: '0x8481150a0f36c98EE859e6C7B46d61FDD836768f',
+  INTEGRATION_MANAGER: '0x965ca477106476B4600562a2eBe13536581883A6',
+  WETH: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2',
 }
 
 let comptrollerContract
@@ -24,19 +36,17 @@ async function main() {
   const [signer] = await ethers.getSigners()
   comptrollerContract = new enzyme.ComptrollerLib(fund.comptrollerProxy, signer)
 
-  const gav = await getGav()
-  const denAssetPrice = await getDenominationAssetPrice()
-  const gavUSD = denAssetPrice * gav
-  const emiIndexBalances = emiTokens.map((token) => {
-    const emiToken = {}
-    emiToken.id = token.id
-    emiToken.symbol = token.symbol
-    emiToken.marketCap = token.marketCap
-    emiToken.targetBalance = (token.marketCap * gavUSD) / totalMarketCap
-    return emiToken
-  })
+  const emiIndexBalances = await calculateEMIBalances(emiTokens, totalMarketCap)
 
-  console.log(emiIndexBalances)
+  // const emiIndexBalancesWithEstimations = await estimateWethCosts(emiIndexBalances)
+  saveIndexOutput(emiIndexBalances)
+  // await initialTrades(emiIndexBalances)
+  // TODO: trades between indexed tokens for subsequent runs
+
+  checkActualEMIBalances(emiIndexBalances, signer)
+
+  console.log('Traded!')
+  await getGav()
 }
 
 // We recommend this pattern to be able to use async/await everywhere
@@ -46,8 +56,36 @@ main().catch((error) => {
   process.exitCode = 1
 })
 
+
+
+function checkActualEMIBalances(emiIndexBalances, signer) {
+  emiIndexBalances.forEach(async (token) => {
+    const tokenContract = new ethers.Contract(token.id, ABIs.TOKEN, signer)
+    const balance = await tokenContract.balanceOf(fund.vaultProxy)
+    token.actualBalance = balance.toString()
+  })
+}
+
+async function calculateEMIBalances(emiTokens, totalMarketCap) {
+  const gav = await getGav()
+  const denAssetPrice = await getDenominationAssetPrice()
+  // TODO: Should use proper math, not js operators
+  const gavUSD = denAssetPrice * gav
+  const emiIndexBalances = emiTokens.map((token) => {
+    const emiToken = {}
+    console.log(token)
+    emiToken.id = token.id
+    emiToken.symbol = token.symbol
+    emiToken.name = token.name
+    emiToken.marketCap = token.marketCap
+    emiToken.decimals = token.decimals
+    emiToken.targetBalance = (token.marketCap * gavUSD) / totalMarketCap
+    return emiToken
+  })
+  return emiIndexBalances
+}
+
 async function getGav(signer, comptrollerProxyAddress) {
-  
   const [gav] = await comptrollerContract.calcGav.args(true).call()
 
   console.log('gav', gav.toNumber())
@@ -88,7 +126,7 @@ async function getTokensWithMarketcap(tokens) {
 
 async function getEnzymeUniverse() {
   const response = await axios.get(ENZYME_UNIVERSE_URL)
-  const tokens = response.data.data.filter((token) => token.type !== 'DERIVATIVE' && token.type !== 'USD')
+  const tokens = response.data.data
   return tokens
 }
 
@@ -116,13 +154,19 @@ async function getMarketCapForAddress(address, symbol) {
   return marketCap
 }
 
-async function tradeOnUniswap(minIncomingAssetAmount, outgoingAssetAmount) {
-  const aPath = 'TODO'
+async function tradeOnUniswapV2(buyToken, sellToken, targetPurchase) {
+  const { path, outgoingAssetAmount, minIncomingAssetAmount } = await getTradeDetails(
+    buyToken,
+    sellToken,
+    targetPurchase
+  )
   const takeOrderArgs = enzyme.uniswapV2TakeOrderArgs({
-    path: aPath, // for example only
-    minIncomingAssetAmount: minIncomingAssetAmount, // for example only
-    outgoingAssetAmount: outgoingAssetAmount, // for example only
+    path: path,
+    minIncomingAssetAmount: minIncomingAssetAmount,
+    outgoingAssetAmount: outgoingAssetAmount,
   })
+  console.log('Order Args')
+  console.log(takeOrderArgs)
 
   // assemble and encode the arguments for callOnExtension()
   const callArgs = enzyme.callOnIntegrationArgs({
@@ -130,11 +174,51 @@ async function tradeOnUniswap(minIncomingAssetAmount, outgoingAssetAmount) {
     selector: enzyme.takeOrderSelector,
     encodedCallArgs: takeOrderArgs,
   })
+  console.log(callArgs)
   const swapTx = comptrollerContract.callOnExtension.args(
-    addresses.INTEGRATION_MANAGER_ADDRESS,
+    addresses.INTEGRATION_MANAGER,
     enzyme.IntegrationManagerActionId.CallOnIntegration,
     callArgs
   )
+  const gasLimit = (await swapTx.estimate()).mul(10).div(9)
+  console.log(swapTx)
+  const swapTxReceipt = await swapTx.gas(gasLimit).send()
+  const finishedReceipt = await comptrollerContract.provider.waitForTransaction(swapTxReceipt.transactionHash)
+  console.log('Swapped!!')
+  console.log(finishedReceipt)
+}
 
-  const swapTxReceipt = await swapTx.send()
+async function initialTrades(emiIndexBalances) {
+  const sellToken = {
+    id: addresses.WETH,
+    name: 'Wrapped Ether',
+    symbol: 'WETH',
+    decimals: 18,
+  }
+  // const buyToken = emiIndexBalances[0]
+  for (const buyToken of emiIndexBalances) {
+    await tradeOnUniswapV2(sellToken, buyToken, parseEther(`${buyToken.targetBalance}`).toString())
+  }
+}
+
+function estimateWethCosts(emiIndexBalances) {
+  const sellToken = {
+    id: addresses.WETH,
+    name: 'Wrapped Ether',
+    symbol: 'WETH',
+    decimals: 18,
+  }
+  // const buyToken = emiIndexBalances[0]
+  return emiIndexBalances.slice(0, 1).map(async (buyToken) => {
+    const inputAmount = await estimateSellTokenAmountForTarget(sellToken, buyToken, buyToken.targetBalance)
+    buyToken.estimatedWETHCost = formatEther(inputAmount)
+    return buyToken
+  })
+}
+
+function saveIndexOutput(results) {
+  const saveJson = JSON.stringify(results, null, 4)
+  const filePath = './EMI_output.json'
+  fs.writeFileSync(filePath, saveJson, 'utf8')
+  return filePath
 }

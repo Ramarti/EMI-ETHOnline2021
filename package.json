@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@enzymefinance/protocol": "^3.0.1",
+    "@uniswap/sdk": "^3.0.3",
     "axios": "^0.22.0"
   }
 }

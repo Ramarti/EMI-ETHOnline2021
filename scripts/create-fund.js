@@ -70,7 +70,6 @@ async function main() {
   await sendInitialDepositToFund(ownerSigner, '100', comptrollerProxy)
   const vault = new ethers.Contract(vaultProxy, ABIs.VAULT, ownerSigner)
   console.log('owner', ownerSigner.address)
-  
   console.log('accessor', await vault.getAccessor())
   console.log('trackedAssets', await vault.getTrackedAssets())
 
@@ -83,7 +82,6 @@ main().catch((error) => {
   console.error(error)
   process.exitCode = 1
 })
-
 
 function saveDeployment(results) {
   const saveJson = JSON.stringify(results, null, 4)
