@@ -9,7 +9,8 @@ const ethers = hre.ethers
 const fs = require('fs')
 const { BigNumber } = ethers
 const INITIAL_ETH = '9'
-
+const tokenFilter = require('./tokenfilter.json')
+const { getTokensWithMarketcap } = require('./utils/marketDataHelpers.js')
 const ABIs = {
   FUND_DEPLOYER: require('../external_abi/enzyme/FundDeployer.json'),
   VAULT: require('../external_abi/enzyme/VaultLib.json'),
@@ -45,7 +46,7 @@ async function main() {
   const feeManagerConfig = createFeeConfig()
   console.log('Creating policy config...')
 
-  const policyManagerConfig = createPoliciesConfig()
+  const policyManagerConfig = await createPoliciesConfig()
 
   console.log('Creating fund...')
   const tx = await fundDeployer.createNewFund(
@@ -90,18 +91,22 @@ function saveDeployment(results) {
   fs.writeFileSync(filePath, saveJson, 'utf8')
   return filePath
 }
-
-function getTokenBlacklist() {
-  return [addresses.DAI]
+// NOTE: This should come from the TCR
+async function getTokenBlacklist() {
+  // WETH is not included because you can't blacklist denomination asset
+  const exclusionList = tokenFilter.filter((token) => token.reason !== '' && token.symbol !== 'WETH')
+  const filteredList = await getTokensWithMarketcap(exclusionList)
+  console.log(filteredList)
+  return filteredList.map((token) => token.id)
 }
 
-function createPoliciesConfig() {
+async function createPoliciesConfig() {
   // policies
   // const maxConcentrationSettings = enzyme.maxConcentrationArgs(utils.parseEther('1'))
   // const adapterBlacklistSettings = enzyme.adapterBlacklistArgs([])
   // const adapterWhitelistSettings = enzyme.adapterWhitelistArgs([])
   // TODO get from TCR contract
-  const assetBlacklistSettings = enzyme.assetBlacklistArgs(getTokenBlacklist())
+  const assetBlacklistSettings = enzyme.assetBlacklistArgs(await getTokenBlacklist())
 
   const policyManagerConfig = enzyme.policyManagerConfigArgs({
     policies: [

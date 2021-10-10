@@ -5,12 +5,10 @@ const ethers = hre.ethers
 const { parseEther, formatEther } = ethers.utils
 const enzyme = require('@enzymefinance/protocol')
 const { getTradeDetails, estimateSellTokenAmountForTarget } = require('./utils/uniswapHelpers.js')
-
+const { getTokensWithMarketcap } = require('./utils/marketDataHelpers.js')
 const fund = require('../deployment/fund.json')
 const tokenFilter = require('./tokenfilter.json')
-const MAX_TOKENS = 20 // By Enzyme
 const ENZYME_UNIVERSE_URL = 'https://services.enzyme.finance/api/enzyme/asset/list'
-const COINGECKO_BASE_URL = 'https://api.coingecko.com/api/v3/'
 
 // TODO take this out to constant file in utils
 const ABIs = {
@@ -137,20 +135,6 @@ function determineTokensInIndex(tokensWithMarketCap) {
   return { emiTokens, totalMarketCap }
 }
 
-async function getTokensWithMarketcap(tokens) {
-  const marketCapped = await Promise.all(
-    tokens.map(async (token) => {
-      const { marketCap, price } = await getMarketDataForAddress(token.id, token.symbol)
-      token.marketCap = marketCap
-      token.price = price
-      return token
-    })
-  )
-
-  const sorted = marketCapped.sort((prev, next) => next.marketCap - prev.marketCap).slice(0, MAX_TOKENS)
-  return sorted
-}
-
 async function getEnzymeUniverse() {
   const response = await axios.get(ENZYME_UNIVERSE_URL)
   const tokens = response.data.data
@@ -168,21 +152,6 @@ function applyBlackList(tokens) {
     const blackListEntry = blacklist[token.id]
     return !blackListEntry
   })
-}
-
-async function getMarketDataForAddress(address, symbol) {
-  console.log('Getting marketcap for address...', address, symbol)
-  const response = await axios.get(
-    `${COINGECKO_BASE_URL}/coins/ethereum/contract/${address}/market_chart/?vs_currency=usd&days=1`
-  )
-  console.log(`${COINGECKO_BASE_URL}/coins/ethereum/contract/${address}/market_chart/?vs_currency=usd&days=1`)
-  const marketCaps = response.data.market_caps
-  const marketCap = marketCaps[marketCaps.length - 1][1]
-  console.log('marketcap', marketCap)
-  const prices = response.data.prices
-  const price = prices[marketCaps.length - 1][1]
-  console.log('price', price)
-  return { marketCap, price }
 }
 
 async function tradeOnUniswapV2(buyToken, sellToken, targetPurchase) {
