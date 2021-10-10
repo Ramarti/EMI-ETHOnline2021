@@ -1,154 +1,162 @@
 [
     {
-        "id": "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9",
-        "symbol": "AAVE",
-        "name": "Aave Token",
-        "marketCap": 3943837683.5806975,
+        "id": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+        "symbol": "UNI",
+        "name": "Uniswap",
+        "marketCap": 12966457527.7087,
         "decimals": 18,
-        "targetBalance": 41241.77845894441
+        "targetBalance": "57921.849576806863352375"
     },
     {
-        "id": "0xa1faa113cbe53436df28ff0aee54275c13b40975",
-        "symbol": "ALPHA",
-        "name": "AlphaToken",
-        "marketCap": 404933918.5676923,
+        "id": "0x514910771af9ca656af840dff83e8264ecf986ca",
+        "symbol": "LINK",
+        "name": "ChainLink Token",
+        "marketCap": 12133314720.99976,
         "decimals": 18,
-        "targetBalance": 4234.5036231102
+        "targetBalance": "54200.1567225272246846"
     },
     {
-        "id": "0xa117000000f279d81a1d3cc75430faa017fa5a2e",
-        "symbol": "ANT",
-        "name": "Aragon Network Token",
-        "marketCap": 181767875.9434501,
+        "id": "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0",
+        "symbol": "MATIC",
+        "name": "Matic Token",
+        "marketCap": 8717495761.848473,
         "decimals": 18,
-        "targetBalance": 1900.7958927474128
+        "targetBalance": "38941.513294993631932934"
     },
     {
         "id": "0xbb0e17ef65f82ab018d8edd776e8dd940327b28b",
         "symbol": "AXS",
         "name": "Axie Infinity Shard",
-        "marketCap": 7441419060.012755,
+        "marketCap": 7561956982.700823,
         "decimals": 18,
-        "targetBalance": 77816.9338892704
-    },
-    {
-        "id": "0x3472a5a71965499acd81997a54bba8d852c6e53d",
-        "symbol": "BADGER",
-        "name": "Badger",
-        "marketCap": 258777584.09294543,
-        "decimals": 18,
-        "targetBalance": 2706.107261395292
-    },
-    {
-        "id": "0xba100000625a3754423978a60c9317c58a424e3d",
-        "symbol": "BAL",
-        "name": "Balancer",
-        "marketCap": 230267982.6741415,
-        "decimals": 18,
-        "targetBalance": 2407.9746403286977
-    },
-    {
-        "id": "0x0d8775f648430679a709e98d2b0cb6250d2887ef",
-        "symbol": "BAT",
-        "name": "Basic Attention Token",
-        "marketCap": 1098620934.992574,
-        "decimals": 18,
-        "targetBalance": 11488.576570977179
-    },
-    {
-        "id": "0x1f573d6fb3f13d689ff844b4ce37794d79a7ff1c",
-        "symbol": "BNT",
-        "name": "Bancor Network Token",
-        "marketCap": 897146637.0167311,
-        "decimals": 18,
-        "targetBalance": 9381.705287484854
-    },
-    {
-        "id": "0x0391d2021f89dc339f60fff84546ea23e337750f",
-        "symbol": "BOND",
-        "name": "BarnBridge Governance Token",
-        "marketCap": 110964720.43677425,
-        "decimals": 18,
-        "targetBalance": 1160.3881255217245
-    },
-    {
-        "id": "0x56d811088235f11c8920698a204a5010a788f4b3",
-        "symbol": "BZRX",
-        "name": "bZx Protocol Token",
-        "marketCap": 91805311.07460274,
-        "decimals": 18,
-        "targetBalance": 960.0329943740622
-    },
-    {
-        "id": "0xaaaebe6fe48e54f431b0c390cfaf0b017d09d42d",
-        "symbol": "CEL",
-        "name": "Celsius",
-        "marketCap": 2418018941.7555523,
-        "decimals": 4,
-        "targetBalance": 25285.878757280047
-    },
-    {
-        "id": "0x06af07097c9eeb7fd685c692751d5c66db49c215",
-        "symbol": "CHAI",
-        "name": "Chai",
-        "marketCap": 733832.649010637,
-        "decimals": 18,
-        "targetBalance": 7.673886697324505
-    },
-    {
-        "id": "0xc00e94cb662c3520282e6f5717214004a7f26888",
-        "symbol": "COMP",
-        "name": "Compound",
-        "marketCap": 1936052935.765273,
-        "decimals": 18,
-        "targetBalance": 20245.829739404016
-    },
-    {
-        "id": "0x4688a8b1f292fdab17e9a90c8bc379dc1dbd8713",
-        "symbol": "COVER",
-        "name": "Cover Protocol Governance Token",
-        "marketCap": 4929586.489884435,
-        "decimals": 18,
-        "targetBalance": 51.55002061987355
-    },
-    {
-        "id": "0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b",
-        "symbol": "CRO",
-        "name": "CRO",
-        "marketCap": 4830527913.586462,
-        "decimals": 8,
-        "targetBalance": 50514.13826722301
-    },
-    {
-        "id": "0xd533a949740bb3306d119cc777fa900ba034cd52",
-        "symbol": "CRV",
-        "name": "Curve DAO Token",
-        "marketCap": 1088650307.6316504,
-        "decimals": 18,
-        "targetBalance": 11384.311021097206
-    },
-    {
-        "id": "0xed91879919b71bb6905f23af0a68d231ecf87b14",
-        "symbol": "DMG",
-        "name": "DMM: Governance",
-        "marketCap": 2532399.175357904,
-        "decimals": 18,
-        "targetBalance": 26.48198382873106
-    },
-    {
-        "id": "0xf629cbd94d3791c9250152bd8dfbdf380e2a3b9c",
-        "symbol": "ENJ",
-        "name": "Enjin Coin",
-        "marketCap": 1538727255.7192826,
-        "decimals": 18,
-        "targetBalance": 16090.887526460663
+        "targetBalance": "33779.660629920769607481"
     },
     {
         "id": "0x50d1c9771902476076ecfc8b2a83ad6b9355a4c9",
         "symbol": "FTX Token",
         "name": "FTT",
-        "marketCap": 6600834694.160345,
+        "marketCap": 6567559344.118463,
         "decimals": 18,
-        "targetBalance": 69026.71558569603
+        "targetBalance": "29337.63393770999208302"
+    },
+    {
+        "id": "0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b",
+        "symbol": "CRO",
+        "name": "CRO",
+        "marketCap": 4828891638.7022,
+        "decimals": 8,
+        "targetBalance": "21570.913607043963248453"
+    },
+    {
+        "id": "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9",
+        "symbol": "AAVE",
+        "name": "Aave Token",
+        "marketCap": 3951291232.5291314,
+        "decimals": 18,
+        "targetBalance": "17650.626311437200931951"
+    },
+    {
+        "id": "0xc944e90c64b2c07662a292be6244bdf05cda44a7",
+        "symbol": "GRT",
+        "name": "Graph Token",
+        "marketCap": 3520010080.152602,
+        "decimals": 18,
+        "targetBalance": "15724.070659680897933361"
+    },
+    {
+        "id": "0xaaaebe6fe48e54f431b0c390cfaf0b017d09d42d",
+        "symbol": "CEL",
+        "name": "Celsius",
+        "marketCap": 2406990489.611112,
+        "decimals": 4,
+        "targetBalance": "10752.15345240836504889"
+    },
+    {
+        "id": "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2",
+        "symbol": "MKR",
+        "name": "Maker",
+        "marketCap": 2321552658.578818,
+        "decimals": 18,
+        "targetBalance": "10370.498155528241669292"
+    },
+    {
+        "id": "0x6b3595068778dd592e39a122f4f5a5cf09c90fe2",
+        "symbol": "SUSHI",
+        "name": "SushiToken",
+        "marketCap": 2083381089.29868,
+        "decimals": 18,
+        "targetBalance": "9306.573195311759240981"
+    },
+    {
+        "id": "0xc00e94cb662c3520282e6f5717214004a7f26888",
+        "symbol": "COMP",
+        "name": "Compound",
+        "marketCap": 1926246118.842663,
+        "decimals": 18,
+        "targetBalance": "8604.642995597624989407"
+    },
+    {
+        "id": "0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f",
+        "symbol": "SNX",
+        "name": "Synthetix Network Token",
+        "marketCap": 1762150116.8328586,
+        "decimals": 18,
+        "targetBalance": "7871.617500834995824306"
+    },
+    {
+        "id": "0xf629cbd94d3791c9250152bd8dfbdf380e2a3b9c",
+        "symbol": "ENJ",
+        "name": "Enjin Coin",
+        "marketCap": 1534532288.9613192,
+        "decimals": 18,
+        "targetBalance": "6854.836660053992487113"
+    },
+    {
+        "id": "0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e",
+        "symbol": "YFI",
+        "name": "yearn.finance",
+        "marketCap": 1214266790.174073,
+        "decimals": 18,
+        "targetBalance": "5424.193787414750724081"
+    },
+    {
+        "id": "0x0d8775f648430679a709e98d2b0cb6250d2887ef",
+        "symbol": "BAT",
+        "name": "Basic Attention Token",
+        "marketCap": 1093818715.6269286,
+        "decimals": 18,
+        "targetBalance": "4886.145886449733137675"
+    },
+    {
+        "id": "0xd533a949740bb3306d119cc777fa900ba034cd52",
+        "symbol": "CRV",
+        "name": "Curve DAO Token",
+        "marketCap": 1088446158.975778,
+        "decimals": 18,
+        "targetBalance": "4862.146392561304204538"
+    },
+    {
+        "id": "0x0f5d2fb29fb7d3cfee444a200298f468908cc942",
+        "symbol": "MANA",
+        "name": "Decentraland MANA",
+        "marketCap": 1056033708.598282,
+        "decimals": 18,
+        "targetBalance": "4717.35826741847707363"
+    },
+    {
+        "id": "0x408e41876cccdc0f92210600ef50372656052a38",
+        "symbol": "REN",
+        "name": "Republic Token",
+        "marketCap": 1053530105.865669,
+        "decimals": 18,
+        "targetBalance": "4706.174541981625388603"
+    },
+    {
+        "id": "0xe41d2489571d322189246dafa5ebde1f4699f498",
+        "symbol": "ZRX",
+        "name": "0x Protocol Token",
+        "marketCap": 910272312.5358639,
+        "decimals": 18,
+        "targetBalance": "4066.234424318620833605"
     }
 ]

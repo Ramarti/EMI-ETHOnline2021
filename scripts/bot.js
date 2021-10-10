@@ -25,19 +25,23 @@ const addresses = {
 }
 
 let comptrollerContract
+//   console.log(calculateTargetBalance(12966457527.7087, parseEther('352039.0'), 78698197842.66219))
 
 async function main() {
-  const tokens = await getEnzymeUniverse()
-  const filteredTokens = applyBlackList(tokens)
-  const tokensWithMarketCap = await getTokensWithMarketcap(filteredTokens)
-
-  const { emiTokens, totalMarketCap } = determineTokensInIndex(tokensWithMarketCap)
-
+  // Init comptroller
   const [signer] = await ethers.getSigners()
   comptrollerContract = new enzyme.ComptrollerLib(fund.comptrollerProxy, signer)
 
-  const emiIndexBalances = await calculateEMIBalances(emiTokens, totalMarketCap)
+  const tokens = await getEnzymeUniverse()
+  const filteredTokens = applyBlackList(tokens)
 
+  const tokensWithMarketCap = await getTokensWithMarketcap(filteredTokens)
+  const { emiTokens, totalMarketCap } = determineTokensInIndex(tokensWithMarketCap)
+  console.log(totalMarketCap)
+
+
+  const emiIndexBalances = await calculateEMIBalances(emiTokens, totalMarketCap)
+  console.log(emiIndexBalances)
   // const emiIndexBalancesWithEstimations = await estimateWethCosts(emiIndexBalances)
   saveIndexOutput(emiIndexBalances)
   // await initialTrades(emiIndexBalances)
@@ -56,8 +60,6 @@ main().catch((error) => {
   process.exitCode = 1
 })
 
-
-
 function checkActualEMIBalances(emiIndexBalances, signer) {
   emiIndexBalances.forEach(async (token) => {
     const tokenContract = new ethers.Contract(token.id, ABIs.TOKEN, signer)
@@ -67,29 +69,38 @@ function checkActualEMIBalances(emiIndexBalances, signer) {
 }
 
 async function calculateEMIBalances(emiTokens, totalMarketCap) {
-  const gav = await getGav()
+  const gavInEth = await getGav()
+  const gav = gavInEth.mul(parseEther('1'))
   const denAssetPrice = await getDenominationAssetPrice()
-  // TODO: Should use proper math, not js operators
-  const gavUSD = denAssetPrice * gav
+  console.log('denAssetPrice', denAssetPrice)
+  const gavUSD = parseEther(`${denAssetPrice}`).mul(gav).div(parseEther('1'))
+  console.log('denAssetPrice', formatEther(gavUSD))
+
   const emiIndexBalances = emiTokens.map((token) => {
     const emiToken = {}
-    console.log(token)
+    // console.log(token)
     emiToken.id = token.id
     emiToken.symbol = token.symbol
     emiToken.name = token.name
     emiToken.marketCap = token.marketCap
     emiToken.decimals = token.decimals
-    emiToken.targetBalance = (token.marketCap * gavUSD) / totalMarketCap
+    emiToken.targetBalance = calculateTargetBalance(token.marketCap, gavUSD, totalMarketCap)
     return emiToken
   })
   return emiIndexBalances
 }
 
-async function getGav(signer, comptrollerProxyAddress) {
+function calculateTargetBalance(tokenMarketCap, gavUSD, totalMarketCap) {
+  const tokenMC = parseEther(`${tokenMarketCap}`)
+  const total = parseEther(`${totalMarketCap}`)
+  return formatEther(tokenMC.mul(gavUSD).div(total))
+}
+
+async function getGav() {
   const [gav] = await comptrollerContract.calcGav.args(true).call()
 
   console.log('gav', gav.toNumber())
-  return gav.toNumber()
+  return gav
 }
 
 async function getDenominationAssetPrice() {
@@ -101,14 +112,22 @@ async function getDenominationAssetPrice() {
 }
 
 function determineTokensInIndex(tokensWithMarketCap) {
+  console.log(tokensWithMarketCap)
   const emiTokens = []
   // eslint-disable-next-line no-var
   var totalMarketCap = 0
   tokensWithMarketCap.forEach((token) => {
-    const oldTotalMarketCap = totalMarketCap
-    totalMarketCap += token.marketCap
-    if (oldTotalMarketCap / totalMarketCap > 0.01) {
+    if (totalMarketCap === 0) {
+      // console.log('Adding token to index', token)
+      totalMarketCap += token.marketCap
       emiTokens.push(token)
+    } else {
+      const oldTotalMarketCap = totalMarketCap
+      totalMarketCap += token.marketCap
+      if (oldTotalMarketCap / totalMarketCap > 0.01) {
+        // console.log('Adding token to index', token)
+        emiTokens.push(token)
+      }
     }
   })
   return { emiTokens, totalMarketCap }
@@ -121,7 +140,9 @@ async function getTokensWithMarketcap(tokens) {
       return token
     })
   )
-  return marketCapped.sort((prev, next) => prev.marketCap >= next.marketCap).slice(0, MAX_TOKENS)
+
+  const sorted = marketCapped.sort((prev, next) => next.marketCap - prev.marketCap).slice(0, MAX_TOKENS)
+  return sorted
 }
 
 async function getEnzymeUniverse() {
@@ -132,6 +153,7 @@ async function getEnzymeUniverse() {
 
 function applyBlackList(tokens) {
   const exclusionList = tokenFilter.filter((token) => token.reason !== '')
+
   const blacklist = {}
   exclusionList.forEach((token) => {
     blacklist[token.id] = token
@@ -209,7 +231,7 @@ function estimateWethCosts(emiIndexBalances) {
     decimals: 18,
   }
   // const buyToken = emiIndexBalances[0]
-  return emiIndexBalances.slice(0, 1).map(async (buyToken) => {
+  return emiIndexBalances.map(async (buyToken) => {
     const inputAmount = await estimateSellTokenAmountForTarget(sellToken, buyToken, buyToken.targetBalance)
     buyToken.estimatedWETHCost = formatEther(inputAmount)
     return buyToken
