@@ -5,8 +5,8 @@
         "name": "Uniswap",
         "marketCap": 12985452404.433506,
         "decimals": 18,
-        "targetBalance": "233.388803445142821659",
-        "price": 25.05126067706695
+        "targetBalance": "233.207967085042378176",
+        "price": 25.081291243621134
     },
     {
         "id": "0x514910771af9ca656af840dff83e8264ecf986ca",
@@ -14,8 +14,8 @@
         "name": "ChainLink Token",
         "marketCap": 12159402132.690395,
         "decimals": 18,
-        "targetBalance": "205.856363483226463524",
-        "price": 26.59502750696245
+        "targetBalance": "205.793210216531311168",
+        "price": 26.61444225452169
     },
     {
         "id": "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0",
@@ -23,8 +23,8 @@
         "name": "Matic Token",
         "marketCap": 8704803606.792797,
         "decimals": 18,
-        "targetBalance": "3019.820119733006810928",
-        "price": 1.2978676924437067
+        "targetBalance": "3013.870315010920803838",
+        "price": 1.3009799571974492
     },
     {
         "id": "0xbb0e17ef65f82ab018d8edd776e8dd940327b28b",
@@ -32,8 +32,8 @@
         "name": "Axie Infinity Shard",
         "marketCap": 7572087274.052133,
         "decimals": 18,
-        "targetBalance": "27.465584351624338382",
-        "price": 124.13072339018866
+        "targetBalance": "27.419210133033640015",
+        "price": 124.39326315503365
     },
     {
         "id": "0x50d1c9771902476076ecfc8b2a83ad6b9355a4c9",
@@ -41,8 +41,8 @@
         "name": "FTT",
         "marketCap": 6577913095.482252,
         "decimals": 18,
-        "targetBalance": "53.914947247440435697",
-        "price": 54.932765787409885
+        "targetBalance": "53.913286662338745872",
+        "price": 54.9576954376971
     },
     {
         "id": "0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b",
@@ -50,8 +50,8 @@
         "name": "CRO",
         "marketCap": 4846078559.835118,
         "decimals": 8,
-        "targetBalance": "11319.890431540586983186",
-        "price": 0.19275282233860505
+        "targetBalance": "11320.12222110910237347",
+        "price": 0.19283040969077847
     },
     {
         "id": "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9",
@@ -59,8 +59,8 @@
         "name": "Aave Token",
         "marketCap": 3949497077.6190104,
         "decimals": 18,
-        "targetBalance": "5.948356373123571715",
-        "price": 298.94915893250413
+        "targetBalance": "5.944961044966599721",
+        "price": 299.2464267203842
     },
     {
         "id": "0xc944e90c64b2c07662a292be6244bdf05cda44a7",
@@ -68,8 +68,8 @@
         "name": "Graph Token",
         "marketCap": 3514551351.690427,
         "decimals": 18,
-        "targetBalance": "2226.598762669425440213",
-        "price": 0.7106903994192236
+        "targetBalance": "2225.056393004723382314",
+        "price": 0.7114838728658027
     },
     {
         "id": "0xaaaebe6fe48e54f431b0c390cfaf0b017d09d42d",
@@ -77,8 +77,8 @@
         "name": "Celsius",
         "marketCap": 2414771185.6417403,
         "decimals": 4,
-        "targetBalance": "189.957737282806716195",
-        "price": 5.7236295348385635
+        "targetBalance": "189.981139886770757963",
+        "price": 5.725345313775126
     },
     {
         "id": "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2",
@@ -86,8 +86,8 @@
         "name": "Maker",
         "marketCap": 2320316783.9106355,
         "decimals": 18,
-        "targetBalance": "0.405771141050526526",
-        "price": 2574.652638354399
+        "targetBalance": "0.405661525281787907",
+        "price": 2576.437738299964
     },
     {
         "id": "0x6b3595068778dd592e39a122f4f5a5cf09c90fe2",
@@ -95,8 +95,8 @@
         "name": "SushiToken",
         "marketCap": 2081236819.7867837,
         "decimals": 18,
-        "targetBalance": "86.447595454742436272",
-        "price": 10.839795811486352
+        "targetBalance": "86.383600297344998286",
+        "price": 10.852414913778292
     },
     {
         "id": "0xc00e94cb662c3520282e6f5717214004a7f26888",
@@ -104,8 +104,8 @@
         "name": "Compound",
         "marketCap": 1925000067.440368,
         "decimals": 18,
-        "targetBalance": "2.741425504491305733",
-        "price": 316.1599243761667
+        "targetBalance": "2.741965370611997601",
+        "price": 316.2313871366453
     },
     {
         "id": "0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f",
@@ -113,8 +113,8 @@
         "name": "Synthetix Network Token",
         "marketCap": 1758611815.174354,
         "decimals": 18,
-        "targetBalance": "79.028861615649664633",
-        "price": 10.01928613007031
+        "targetBalance": "79.019761219832202985",
+        "price": 10.024678728933528
     },
     {
         "id": "0xf629cbd94d3791c9250152bd8dfbdf380e2a3b9c",
@@ -122,8 +122,8 @@
         "name": "Enjin Coin",
         "marketCap": 1537900133.4445415,
         "decimals": 18,
-        "targetBalance": "419.917510210820433602",
-        "price": 1.6489848618323122
+        "targetBalance": "419.777332724301532499",
+        "price": 1.6502332774136228
     },
     {
         "id": "0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e",
@@ -131,8 +131,8 @@
         "name": "yearn.finance",
         "marketCap": 1216423092.7176976,
         "decimals": 18,
-        "targetBalance": "0.016005197903549849",
-        "price": 34219.69438317118
+        "targetBalance": "0.015997813230047317",
+        "price": 34249.97222602046
     },
     {
         "id": "0x0d8775f648430679a709e98d2b0cb6250d2887ef",
@@ -140,8 +140,8 @@
         "name": "Basic Attention Token",
         "marketCap": 1093688753.9356115,
         "decimals": 18,
-        "targetBalance": "669.671469777174131325",
-        "price": 0.7353336972230715
+        "targetBalance": "669.808582004968636646",
+        "price": 0.7354941594496982
     },
     {
         "id": "0xd533a949740bb3306d119cc777fa900ba034cd52",
@@ -149,8 +149,8 @@
         "name": "Curve DAO Token",
         "marketCap": 1085865225.9905164,
         "decimals": 18,
-        "targetBalance": "174.854728865968302487",
-        "price": 2.7960894581712585
+        "targetBalance": "174.734232542436109891",
+        "price": 2.799201216258247
     },
     {
         "id": "0x0f5d2fb29fb7d3cfee444a200298f468908cc942",
@@ -158,8 +158,8 @@
         "name": "Decentraland MANA",
         "marketCap": 1057115923.1494007,
         "decimals": 18,
-        "targetBalance": "595.993018611813000183",
-        "price": 0.7986085599524961
+        "targetBalance": "595.980048125565731542",
+        "price": 0.7989637647228532
     },
     {
         "id": "0x408e41876cccdc0f92210600ef50372656052a38",
@@ -167,8 +167,8 @@
         "name": "Republic Token",
         "marketCap": 1049879395.981545,
         "decimals": 18,
-        "targetBalance": "450.671718795633137102",
-        "price": 1.0488940603242103
+        "targetBalance": "450.638445737344033389",
+        "price": 1.0494152281756906
     },
     {
         "id": "0xe41d2489571d322189246dafa5ebde1f4699f498",
@@ -176,7 +176,7 @@
         "name": "0x Protocol Token",
         "marketCap": 906758322.8515991,
         "decimals": 18,
-        "targetBalance": "380.359413912616637343",
-        "price": 1.0733711046470344
+        "targetBalance": "380.345065852509321649",
+        "price": 1.0738656569779634
     }
 ]
