@@ -94,6 +94,7 @@ function saveDeployment(results) {
 // NOTE: This should come from the TCR
 async function getTokenBlacklist() {
   // WETH is not included because you can't blacklist denomination asset
+  // NOTE: we need Coingecko premium
   const exclusionList = tokenFilter.filter((token) => token.reason !== '' && token.symbol !== 'WETH')
   const filteredList = await getTokensWithMarketcap(exclusionList)
   console.log(filteredList)
