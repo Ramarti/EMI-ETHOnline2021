@@ -84,16 +84,20 @@ async function calculateEMIBalances(emiTokens, totalMarketCap) {
     emiToken.name = token.name
     emiToken.marketCap = token.marketCap
     emiToken.decimals = token.decimals
-    emiToken.targetBalance = calculateTargetBalance(token.marketCap, gavUSD, totalMarketCap)
+    emiToken.targetBalance = calculateTargetBalance(token.marketCap, gavUSD, totalMarketCap, token.price)
+    emiToken.price = token.price
     return emiToken
   })
   return emiIndexBalances
 }
 
-function calculateTargetBalance(tokenMarketCap, gavUSD, totalMarketCap) {
+function calculateTargetBalance(tokenMarketCap, gavUSD, totalMarketCap, tokenPrice) {
   const tokenMC = parseEther(`${tokenMarketCap}`)
   const total = parseEther(`${totalMarketCap}`)
-  return formatEther(tokenMC.mul(gavUSD).div(total))
+  const price = parseEther(`${tokenPrice}`)
+  const targetUSD = tokenMC.mul(gavUSD).div(total).mul(parseEther('1'))
+  const targetBalance = targetUSD.div(price)
+  return formatEther(targetBalance)
 }
 
 async function getGav() {
@@ -136,7 +140,9 @@ function determineTokensInIndex(tokensWithMarketCap) {
 async function getTokensWithMarketcap(tokens) {
   const marketCapped = await Promise.all(
     tokens.map(async (token) => {
-      token.marketCap = await getMarketCapForAddress(token.id, token.symbol)
+      const { marketCap, price } = await getMarketDataForAddress(token.id, token.symbol)
+      token.marketCap = marketCap
+      token.price = price
       return token
     })
   )
@@ -164,16 +170,19 @@ function applyBlackList(tokens) {
   })
 }
 
-async function getMarketCapForAddress(address, symbol) {
+async function getMarketDataForAddress(address, symbol) {
   console.log('Getting marketcap for address...', address, symbol)
   const response = await axios.get(
     `${COINGECKO_BASE_URL}/coins/ethereum/contract/${address}/market_chart/?vs_currency=usd&days=1`
   )
+  console.log(`${COINGECKO_BASE_URL}/coins/ethereum/contract/${address}/market_chart/?vs_currency=usd&days=1`)
   const marketCaps = response.data.market_caps
-  const mostRecent = marketCaps[marketCaps.length - 1]
-  const marketCap = mostRecent[mostRecent.length - 1]
+  const marketCap = marketCaps[marketCaps.length - 1][1]
   console.log('marketcap', marketCap)
-  return marketCap
+  const prices = response.data.prices
+  const price = prices[marketCaps.length - 1][1]
+  console.log('price', price)
+  return { marketCap, price }
 }
 
 async function tradeOnUniswapV2(buyToken, sellToken, targetPurchase) {
