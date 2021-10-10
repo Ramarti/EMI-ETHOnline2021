@@ -8,7 +8,7 @@ const enzyme = require('@enzymefinance/protocol')
 const ethers = hre.ethers
 const fs = require('fs')
 const { BigNumber } = ethers
-const INITIAL_WETH_AMOUNT = '10'
+const INITIAL_ETH = '9'
 
 const ABIs = {
   FUND_DEPLOYER: require('../external_abi/enzyme/FundDeployer.json'),
@@ -68,7 +68,7 @@ async function main() {
   console.log('Saved to file', saveDeployment(toSave))
 
   console.log('Seeding fund...')
-  await sendInitialDepositToFund(ownerSigner, INITIAL_WETH_AMOUNT, comptrollerProxy)
+  await sendInitialDepositToFund(ownerSigner, INITIAL_ETH, comptrollerProxy)
   const vault = new ethers.Contract(vaultProxy, ABIs.VAULT, ownerSigner)
   console.log('owner', ownerSigner.address)
   console.log('accessor', await vault.getAccessor())
