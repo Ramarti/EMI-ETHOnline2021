@@ -169,6 +169,7 @@ async function getMarketCapForAddress(address, symbol) {
   const response = await axios.get(
     `${COINGECKO_BASE_URL}/coins/ethereum/contract/${address}/market_chart/?vs_currency=usd&days=1`
   )
+  console.log(`${COINGECKO_BASE_URL}/coins/ethereum/contract/${address}/market_chart/?vs_currency=usd&days=1`)
   const marketCaps = response.data.market_caps
   const mostRecent = marketCaps[marketCaps.length - 1]
   const marketCap = mostRecent[mostRecent.length - 1]
