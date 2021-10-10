@@ -8,7 +8,7 @@ const enzyme = require('@enzymefinance/protocol')
 const ethers = hre.ethers
 const fs = require('fs')
 const { BigNumber } = ethers
-const INITIAL_ETH = '10'
+const INITIAL_ETH = '9'
 
 const ABIs = {
   FUND_DEPLOYER: require('../external_abi/enzyme/FundDeployer.json'),
